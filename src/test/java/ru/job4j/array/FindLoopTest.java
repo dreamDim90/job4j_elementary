@@ -31,4 +31,13 @@ public class FindLoopTest {
         int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenArrayHas6Then3() {
+        int[] data = new int[] {5, 8, 9, 6, 7, 12, 69};
+        int el = 6;
+        int result = FindLoop.indexOf(data, el);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
