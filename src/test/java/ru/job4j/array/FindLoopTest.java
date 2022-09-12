@@ -40,4 +40,39 @@ public class FindLoopTest {
         int expected = 3;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenDiapasonHas2Then3() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonHasNot8ThenMinus1() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 8;
+        int start = 0;
+        int finish = 3;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = -1;
+        assertThat(result).isEqualTo(expected);
+        /* Дописать тест, когда элемент 8 в диапазоне не найден.
+        Можно искать любой другой элемент, корректно отражая этот факт в названии теста. */
+    }
+
+    @Test
+    public void whenDiapasonHas3Then4() {
+        int[] data = new int[] {5, 2, 3, 10, 2, 4};
+        int el = 3;
+        int start = 1;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 2;
+        assertThat(result).isEqualTo(expected);
+    }
 }
