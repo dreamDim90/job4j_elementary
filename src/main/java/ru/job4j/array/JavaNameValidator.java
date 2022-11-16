@@ -4,7 +4,6 @@ import static java.lang.Character.isDigit;
 
 public class JavaNameValidator {
     public static boolean isNameValid(String name) {
-        boolean valid = true;
         if (name.isEmpty() || Character.isUpperCase(name.codePointAt(0)) || isDigit(name.codePointAt(0))) {
             return false;
         }
@@ -14,7 +13,7 @@ public class JavaNameValidator {
                 return false;
             }
         }
-        return valid;
+        return true;
     }
 
     public static boolean isSpecialSymbol(int code) {
