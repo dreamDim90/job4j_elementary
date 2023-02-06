@@ -18,8 +18,9 @@ public class MaxTest {
     public void whenMax5To1Then5() {
         int left = 5;
         int right = 1;
-        int result = Max.max(left, right);
-        int expected = 5;
+        int up = 6;
+        int result = Max.max(left, right, up);
+        int expected = 6;
         assertThat(result).isEqualTo(expected);
     }
 
@@ -27,8 +28,10 @@ public class MaxTest {
     public void whenMax9To9Then9() {
         int left = 9;
         int right = 9;
-        int result = Max.max(left, right);
-        int expected = 9;
+        int up = 10;
+        int down = 10;
+        int result = Max.max(left, right, up, down);
+        int expected = 10;
         assertThat(result).isEqualTo(expected);
     }
 }
