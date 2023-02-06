@@ -14,4 +14,13 @@ public class PointTest {
         double expected = 2.0;
         assertThat(expected).isEqualTo(rsl);
     }
+
+    @Test
+    public void when001to023then2828() {
+        Point cordinate = new Point(0, 0, 1);
+        Point another = new Point(0, 2, 3);
+        double rsl = cordinate.distance3d(another);
+        double expected = 2.8284271247461903;
+        assertThat(expected).isEqualTo(rsl);
+    }
 }
