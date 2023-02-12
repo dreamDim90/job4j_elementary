@@ -28,10 +28,10 @@ public class MaxTest {
     public void whenMax9To9Then9() {
         int left = 9;
         int right = 9;
-        int up = 10;
-        int down = 10;
+        int up = 11;
+        int down = 11;
         int result = Max.max(left, right, up, down);
-        int expected = 10;
+        int expected = 11;
         assertThat(result).isEqualTo(expected);
     }
 }
