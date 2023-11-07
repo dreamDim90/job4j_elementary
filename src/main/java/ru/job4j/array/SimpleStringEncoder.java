@@ -12,7 +12,7 @@ public class SimpleStringEncoder {
                 result = result + symbol + counter;
                 symbol = input.charAt(i);
                 counter = 1;
-            } else if (counter == 1) {
+            } else {
                 result = result + symbol;
                 symbol = input.charAt(i);
             }
