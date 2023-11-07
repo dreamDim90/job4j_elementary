@@ -13,7 +13,7 @@ public class SimpleStringEncoder {
                 symbol = input.charAt(i);
                 counter = 1;
             } else {
-                result = result + symbol;
+                result += symbol;
                 symbol = input.charAt(i);
             }
         }
